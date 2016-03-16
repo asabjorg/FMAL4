@@ -3,7 +3,7 @@
 #reader(lib "htdp-intermediate-lambda-reader.ss" "lang")((modname 1c) (read-case-sensitive #t) (teachpacks ()) (htdp-settings #(#t constructor repeating-decimal #f #t none #f () #f)))
 (define (compress lis)
    (cond
-     ((null? (cdr lis)) '())
+     ((null? lis) '())
      ((eq? (car lis)(car (cdr lis))) ((cdr lis)))
       (else (cons(car lis)(compress(cdr lis))))
     )
