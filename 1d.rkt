@@ -11,7 +11,7 @@
 
 (define (maxofmax lis)
 
-  (maxElement(map maxElement lis))
+  maxElement(map maxElement lis)
   
 )
 
