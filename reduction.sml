@@ -1,2 +1,2 @@
 fun reduction f [a] = a
-| reduction f (a::at) = f(a, reduction f at);
+| reduction f (a::at) = reduction f(f(a,hd(at))::tl(at));
