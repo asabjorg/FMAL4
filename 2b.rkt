@@ -10,4 +10,3 @@
 )
 
 
-(charactersPerWord '(Scheme is so wonderful))

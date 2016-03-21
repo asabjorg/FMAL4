@@ -18,7 +18,9 @@
 )
 
 (define (charactersPerSentence lis)
-  (map sumList(map charactersPerWord lis))
+  (
+      map sumList(map charactersPerWord lis)
+  )
 )
 
 (charactersPerSentence '((Hello Mary) (Scheme is so wonderful) (See you later)
