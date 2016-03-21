@@ -18,18 +18,33 @@
 )
 
 (define (charactersPerSentence lis)
+<<<<<<< HEAD
   (
       map sumList(map charactersPerWord lis)
   )
 )
+=======
+  (map sumList(map charactersPerWord lis))
+)
+
+>>>>>>> a58e3c82da1723eaeb1e1968d43118b722989c32
 (define (wordsPerSentence lis)
 
   (map length lis)
 )
 
+<<<<<<< HEAD
 (define (statsDocument lst)
  
 )
 
 (statsDocument '((Hello Mary) (Scheme is so wonderful) (See you later)
 (John)))
+=======
+(define (statsDocument lis)
+  (list (sumList(charactersPerSentence lis))
+        (sumList(wordsPerSentence lis))
+        (length lis)
+   )
+ )
+>>>>>>> a58e3c82da1723eaeb1e1968d43118b722989c32
