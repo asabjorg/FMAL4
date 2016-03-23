@@ -17,5 +17,3 @@
 (define (split lst n)
   (list (firstList lst n) (secondList lst n))
 )
-
-(split '(a b c d e f g) 3)
